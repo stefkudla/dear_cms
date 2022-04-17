@@ -67,7 +67,7 @@ const PostDetail = ({ post }) => {
           className="h-full w-full rounded-t-lg object-top"
         />
       </div>
-      <div className="mb-8 block w-full justify-between text-center lg:flex">
+      <div className="mb-8 block w-full items-center justify-between text-center lg:flex">
         <div className="mb-4 mr-8 flex w-full items-center justify-center lg:mb-0 lg:w-auto">
           <img
             src={post.author.photo.url}
@@ -83,7 +83,7 @@ const PostDetail = ({ post }) => {
         <div className="font-medium text-gray-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="mr-2 inline h-6 w-6 text-green-500"
+            className="mr-2 inline h-6 w-6 text-sky-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

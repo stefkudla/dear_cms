@@ -13,13 +13,13 @@ const PostCard = ({ post }) => {
         />
       </div>
       <h1
-        className="duration-600 mb-8 cursor-pointer text-center
-        text-2xl font-semibold transition hover:text-green-600 sm:text-3xl"
+        className="duration-600 mb-2 cursor-pointer px-4
+        text-center text-2xl font-semibold transition hover:text-sky-500 sm:text-3xl"
       >
         <Link href={`/post/${post.slug}`}>{post.title}</Link>
       </h1>
-      <div className="mb-8 block w-full items-center justify-center text-center lg:flex">
-        <div className="mb-4 mr-8 flex w-full items-center justify-center lg:mb-0 lg:w-auto">
+      <div className="mb-8 block w-full items-center justify-center border-b-2 pb-2 text-center lg:flex">
+        <div className="mr-8 flex w-full items-center justify-center lg:mb-0 lg:w-auto ">
           <img
             src={post.author.photo.url}
             alt={post.author.name}
@@ -34,7 +34,7 @@ const PostCard = ({ post }) => {
         <div className="font-medium text-gray-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="mr-2 inline h-6 w-6 text-green-500"
+            className="mr-2 inline h-6 w-6 text-sky-500"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -54,7 +54,7 @@ const PostCard = ({ post }) => {
       </p>
       <div className="text-center">
         <Link href={`/post/${post.slug}`}>
-          <span className="inline-block transform cursor-pointer rounded-full bg-green-600 px-8 py-3 text-lg font-medium text-white transition duration-500 hover:-translate-y-1">
+          <span className="inline-block transform cursor-pointer rounded-md border-2 border-sky-500 bg-sky-500 px-8 py-3 text-lg font-medium text-white transition duration-500 hover:-translate-y-1 hover:bg-transparent hover:text-sky-400">
             Continue Reading
           </span>
         </Link>
