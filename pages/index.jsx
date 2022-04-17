@@ -4,6 +4,7 @@ import { getPosts } from '../services'
 import Head from 'next/head'
 
 const Home = ({ posts }) => {
+  posts.reverse()
   return (
     <div className="container mx-auto mb-8 px-10">
       <Head>
