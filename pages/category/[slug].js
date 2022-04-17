@@ -5,11 +5,11 @@ import { getCategories, getCategoryPost } from '../../services'
 import { PostCard, Categories, Loader } from '../../components'
 
 const CategoryPost = ({ posts }) => {
-  const router = useRouter()
+  //   const router = useRouter()
 
-  if (router.isFallback) {
-    return <Loader />
-  }
+  //   if (router.isFallback) {
+  //     return <Loader />
+  //   }
 
   return (
     <div className="container mx-auto mb-8 px-10">
